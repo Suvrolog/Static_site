@@ -1,64 +1,1018 @@
+html {
+    font-size: 16px;
+}
+
 body {
-    max-width: 1366px;
-    max-height: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     position: relative;
     background-color: white;
-    padding: 80px 0 0 0;
-    margin: 0 auto;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
 }
 
-.big {
-    flex-wrap: wrap;
-    max-width: 1162px;
-    max-height: 570px;
-    /*Размер задан, чтобы выровнять по центру*/
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+.menu__contact {
+    z-index: 1000;
+    color: black;
 }
 
-.big div {
-    float: left;
-    width: 283px;
-    height: 284px;
-    margin: 2px 2px 2px 2px;
-    display: block;
+.menu__link {
+    color: black;
+    font-size: small;
+    font-weight: normal;
+    text-decoration: none;
 }
 
-h2 {
+.menu__contact .menu__link:hover { 
+    color: #FF8C00;
+    transition-duration: 0.5s;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.menu__num {
+    margin: 0;
+    font-size: 0.5cm;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.menu__contactUnderline {
+    text-decoration: underline;
+}
+
+.menu__text-link {
+	position: relative;
+	color: black;
+	text-decoration: none;
+}
+
+.menu__text-link:hover{
+    color: #FF8C00;
+    transition-duration: 0.5s;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.menu__text-link::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 2px;
+	background-color: #FF8C00;
+}
+
+.menu__text-link:hover:before {
+	width: 100%;
+}
+
+.menu__text-link::before {
+	transition: width 0.35s;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.header__h2 {
     text-align: center;
 }
 
-.link {
+.header__hr-line {
+    width: 4.375rem;
+    background-color: black;
+    text-align: center;
+}
+
+.header__slogan {
+    text-align: center;
+}
+
+.menu__nav {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 1111;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+.head__item1 {
+    position: absolute;
+    z-index: 100;
+    margin-left: 7%;
+    max-width: 32.5rem;
+    height: 18.312rem;
+}
+
+.head__item1-img {
+    z-index: 10;
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -3rem;
+    z-index: 100;
+}
+
+.head__item3 {
+    position: relative;
+    max-width: 100vw;
+    max-height: 660px;
+}
+
+.head__item4 {
+    position: absolute;
+    margin-top: -182px;
+    margin-left: 14px;
+}
+
+.head__item5 {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -155px;
+}
+
+.head__item6 {
+    position: absolute;
+    right: 10%;
+    margin-top: -650px;
+    z-index: -2;
+}
+
+.head__item7 {
+    position: absolute;
+    right: 76%;
+    margin-top: -450px;
+    z-index: 0;
+}
+
+.head__item8 {
+    position: absolute;
+    right: 12%;
+    margin-top: -580px;
+}
+
+.head__item9 {
+    position: absolute;
+    right: 0%;
+    margin-top: -250px;
+    z-index: -1;
+}
+
+.head__item1-1 {
+    font-size: 3cm;
+    font-weight: 900;
+    line-height: 90%;
+    margin-bottom: 0px;
+}
+
+.head__item1-2 {
+    font-size: 1cm;
+    font-weight: 900;
+    line-height: 90%;
+    margin-bottom: 0px;
+    position: absolute;
+}
+
+.head__item1-3 {
+    font-size: 0.5cm;
+    font-weight: bold;
+}
+
+.eatbox__totalText {
+    margin-left: -20px;
+}
+
+.buttonHead__click {
+    color: rgba(250, 250, 250, 0.979);
+    height: 3.937rem;
+    width: 15.312rem;
+    box-sizing: border-box;
+    background-color: #162123;
+    font-weight: bold;
+    border: 3px solid #162123;
+    border-radius: 40px;
+    margin-top: 50px;
+    position: absolute;
+    text-align: center;
+    margin-top: -150px;
+    margin-left: 7%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+}
+
+.buttonHead__click:hover {
+    background-color: rgba(255, 255, 255, 0.979);
+    color: #162123;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.bz-content {
+    box-sizing: content-box;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .bz-content *,
+  .bz-content *::before,
+  .bz-content *::after {
+    box-sizing: inherit;
+  }
+  /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.bz-content__column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.bz-content__item {
+    list-style-type:none;
+    width: 151px;
+    padding: 0 4.437rem;
+    
+}
+
+.animate__animated.animate__fadeInDown:nth-child(1){
+    animation-delay: 0s;
+}
+
+.animate__animated.animate__fadeInDown:nth-child(2){
+    animation-delay: 1.5s;
+}
+
+.animate__animated.animate__fadeInDown:nth-child(3){
+    animation-delay: 3s;
+}
+
+.animate__animated.animate__fadeInDown:nth-child(4){
+    animation-delay: 4.5s;
+}
+
+.animate__animated.animate__fadeInDown:nth-child(5){
+    animation-delay: 6s;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.bz-content__circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #BFE142;
+    animation-name:bz-content__circle;
+    animation-iteration-count: infinite;
+}
+
+.bz-content__circle--1{
+    animation-duration: 14s;
+    animation-delay: 1.5s;
+}
+
+.bz-content__circle--2{
+    animation-duration: 14s;
+    animation-delay: 3s;
+}
+
+.bz-content__circle--3{
+    animation-duration: 14s;
+    animation-delay: 4.5s;
+}
+
+.bz-content__circle--4{
+    animation-duration: 14s;
+    animation-delay: 6s;
+}
+
+.bz-content__circle--5{
+    animation-duration: 14s;
+    animation-delay: 7.5s;
+}
+
+@keyframes bz-content__circle {
+    0%{
+        transform:rotateY(0deg);
+    }
+    10%{
+        transform: rotateY(180deg);
+    }
+    20%{
+        transform: rotateY(180deg);
+    }
+    30%{
+        transform: rotateY(180deg);
+    }
+    40%{
+        transform: rotateY(180deg);
+    }
+    50%{ 
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform:rotateY(0deg);
+    }
+    70%{
+        transform: rotateY(0deg);
+    }
+    80%{
+        transform: rotateY(0deg);
+    }
+    90%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+
+.header__bazilik_list3 {
+    position: absolute;
+    margin-top: 100px;
+}
+
+.header__greenery3 {
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -70px;
+    z-index: -1;
+}
+
+.header__bazilik_list2{
+    position: absolute;
+    right: 0;
+    margin-right: 300px;
+    margin-top: -40px;
+}
+
+.header__greenery2{
+    position: absolute;
+    right: 0;
+    margin-top: -40px;
+    margin-right: 100px;
+    z-index: -1;
+}
+
+.inst__item-img {
+    padding: 3px 3px 3px 3px;
+}
+
+.inst__item {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 69px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-bottom: 140px;
+
+}
+
+.header__h2 {
+    text-align: center;
+}
+
+.eatbox__type {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 -10px;
+    justify-content: center;
+}
+
+.eatbox__type-button {
+    position: absolute;
+    height: 63px;
+    width: 245px;
+    box-sizing: border-box;
+    background-color: white;
+    font-weight: bold;
+    border: 3px solid #ff0000;
+    border-radius: 40px;
+    color: rgba(255, 3, 3, 0.979);
+    text-decoration: none;
+    padding: 17px 10px 10px 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.eatbox__type-button:hover {
+    background-color: rgba(255, 3, 3, 0.979);
+    color: #f5f5f5;
+}
+
+.eatbox__type-button:hover {
+    background-color: rgba(255, 3, 3, 0.979);
+    color: #f5f5f5;
+}
+
+.eatbox__column:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.eatbox__column {
+    width: 22.625rem;
+    height: 48.187rem;
+    margin: 25px 10px;
+    background-color: white;
+}
+.eatbox__column-img {
+    width: 22.625rem;
+    height: 19.875rem;
+}
+
+.eatbox__column-p {
+    color: #63A233;
+    text-decoration: solid;
+    text-align: start;
+    font-weight: bold;
+}
+
+.eatbox__timeeat {
+    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.eatbox__timeeat-period {
+    width: 35%;
+}
+
+.eatbox__item-img {
+    padding-right: 5px;
+}
+
+.eatbox__part {
+    margin: 20px 20px 20px 20px;
+}
+
+.eatbox__name {
+    font-weight: normal;
+}
+
+.eatbox__rectangle {
+    position: absolute;
+    right: 0;
+    margin-top: -800px;
+    z-index: -10;
+}
+
+.eatbox__food2{
+    position: absolute;
+    right: 0;
+    margin-right: 0px;
+    margin-top: -400px;
+    z-index: -1;
+}
+.eatbox__spice {
+    position: absolute;
+    right: 0;
+    margin-top: -650px;
+    z-index: -3;
+}
+
+.eatbox__svekla_list {
+    position: absolute;
+    right: 0;
+    margin-top: -620px;
+    margin-right: 120px;
+    z-index: -3;
+}
+
+.eatbox__perec2 {
+    position: absolute;
+    right: 0%;
+    margin-top: -120px;
+    z-index: -1;
+}
+
+.eatbox__svekla_list_small {
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    margin-top: -750px;
+    z-index: -3;
+}
+
+.eatbox__ogurec {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -10px;
+}
+
+.inst__link {
     margin-left: auto;
     margin-right: auto;
     top: 10px;
-    width: 543px;
-    height: 101px;
     list-style: none;
-    position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.item {
+
+.inst__tag-link {
+    color: black;
+    text-decoration: none;
+}
+
+.inst__tag {
     display: inline-block;
 }
 
-.item::after { 
+.inst__tag::after {
     content: '-';
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.item:first-child::after { 
+.inst__tag:first-child::after {
     display: none;
 }
 
-.item:last-child::after {
-      display: none;
+.inst__tag:last-child::after {
+    display: none;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.contactus {
+    background-color: #282828;
+    color: white;
+    z-index: -1;
 }
 
-.link a {  
-    color: black;
-      text-decoration: none;
+.contactus__mushrooms {
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -10px;
+    z-index: 0;
 }
 
+.img-anim:hover{
+    animation-name: zoom;
+    Animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+@keyframes zoom {
+    0%{
+        width: 100%;
+        transform: rotate(0deg);
+    }
+    100%{width: 115%;
+        transform: rotate(4deg);}
+}
+
+/*.animate__flipInY {
+    animation-delay:1.5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+*/
+
+
+.contactus__greenery3{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 300px;
+}
+
+.contactus__perec3 {
+    position: absolute;
+    margin-top: 250px;
+}
+
+.contactus__logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 46px;
+    z-index: 10;
+}
+.contactus__logoimg {
+    max-width: 200px;
+}
+
+.contactus__head {
+    text-align: center;
+    color: #BFE142;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+.contactus__button {
+    height: 63px;
+    width: 245px;
+    box-sizing: border-box;
+    background-color: #282828;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    padding: 17px 10px 10px 10px;
+    text-align: center;
+    margin-top: 48px;
+
+}
+
+
+.contactus__button:hover{
+    background-color: rgba(255, 255, 255, 0.979);
+    color: #282828;
+}
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.contactus__buttonBlock {
+    width: 900px;
+    height: 176px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    flex-shrink: 2;
+}
+
+.contactus__client {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left:auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.contactus__subscr {
+    padding: 10px 10px 10px 10px;
+    margin: 15px 9px 15px 9px;
+    
+}
+
+.contactus__radio {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    margin-right: 7px;
+  }
+  
+.contactus__radio::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #282828;
+    border: 3px solid white;
+  }
+  
+.contactus__radio:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    }
+    /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+    .contactus__personaldata {
+        position: relative;
+        height: 15px;
+        width: 15px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        margin-right: 7px;
+      }
+      
+    .contactus__personaldata::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        transform: translate(-50%, -50%);
+        background-color: #282828;
+        border: 3px solid white;
+      }
+      
+    .contactus__personaldata:checked::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        visibility: visible;
+        }
+    /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+
+.contactus__field {
+    background-color: #282828;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    margin: 15px 9px 15px 9px;
+    outline:none;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 430px;
+    resize:none;
+}
+
+.contactus__field::placeholder{
+    color: white;
+}
+
+.contactus__label{
+    margin-right: 50px;
+}
+
+.contactust__time {
+
+}
+
+.contactus__clientInfo{
+    display: flex;
+    flex-flow: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.contactus__clientInfo--reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.contactus__perec4 {
+    position: absolute;
+    right: 0;
+    margin-top: -250px;
+}
+
+.footer {
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact__social{
+    right: 0;
+}
+
+.contact__social-link {
+    text-decoration: none;
+    border-bottom: none;
+    margin: 0px 10px 10px 10px;
+}
+
+.contact__social-li {
+    list-style-type: none;
+}
+
+.contact__social-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address {
+    width: 33%;
+    text-align: justify;
+    font-style: normal;
+}
+
+.address-link {
+    color: white;
+}
+
+.copyright {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 90px 20px 70px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px};
+    .eatbox__perec2 {
+        display: none;
+    }
+    
+    .header__greenery3 {
+        display: none;
+    }
+    .header__greenery2 {
+        display: none;
+    }
+    .contactus__mushrooms {
+        display: none;
+    }
+    .contactus__perec3 {
+        display: none;
+    }
+    .contactus__perec4 {
+        display: none;
+    }
+    .eatbox__ogurec {
+        display: none;
+    }
+    .head__item1 {
+        font-size: 10px;
+    }
+    .head__item3-img {
+        display: none;
+    }
+    .head__item3 {
+        background: #BFE142;
+        height: 400px;
+    }
+    .head__item5 {
+        display: none;
+    }
+    .head__item9 {
+        display: none;
+    }
+    .menu__contact-1 {
+        display: none;
+    }
+    
+    .menu__num{
+        font-size: 13px;
+    }
+
+    .head__item1-1 {
+        font-size: 2cm;
+        max-width: 90%;
+    }
+
+    .head__item1-3 {
+        font-size: 0.3cm;
+    }
+
+    .buttonHead__click {
+        margin-top: -80px;
+    }
+/*
+    .head__item6 {
+        margin-top: 7%;
+        left: 60%;
+        z-index: 1000;
+    }
+    .head__item6-img{
+        width: 20rem;
+        height: 20rem;
+    }
+*/
+    .head__item7{
+        margin-top: -70%;
+
+    }
+    .head__item7-img{
+        width: 5rem;
+        height: 5rem;
+        
+    }
+
+    .contactus__clientInfo {
+        justify-content: center;
+    }
+    .contactus__buttonBlock{
+        justify-content: center;
+    }
+    .contactus__greenery3 {
+        display: none;
+    }
+    .inst__item {
+        margin-bottom: 10px;
+    }
+    .bz-content {
+        margin-top: 5%;
+    }
+    .head__item1-img{
+        height: 100px;
+        width: 100px;
+    }
+    .bz-content__item {
+        padding: 0 3rem;
+    }
+    .eatbox__rectangle{
+        display: none;
+    }
+    .eatbox__food2{
+        display: none;
+    }
+    .eatbox__spice{
+        display: none;
+    }
+    .eatbox__svekla_list {
+        display: none;
+    }
+    .eatbox__svekla_list_small {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .head__item6 {
+        display: none;
+    }
+    .contactus__clientInfo{
+        width: 320px;
+    }
+    .contactus__field {
+        width: 320px;
+    }
+    .head__item3 {
+        width: 100%;
+        height: 300px;
+    }
+    .inst__link {
+        flex-wrap: wrap;
+    }
+
+    .head__item7 {
+        display: none;
+    }
+    .menu__contact{
+        display: none;
+    }
+    .head__item1-1 {
+        font-size: 1.5cm;
+        max-width: 60%;
+        margin-top: 40px;
+    }
+    .head__item1-img{
+        height: 85px;
+        width: 85px;
+    }
+    .eatbox__perec2{
+        display: none;
+    }
+    .bz-content__circle {
+        display: none;
+        
+    }
+    .bz-content__column{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .bz-content__item{
+        padding: 0;
+        flex-direction: row;
+    }
+    .header__slogan {
+        width: 100%;
+    }
+    .menu__nav{
+        padding: 0%;
+        width: 90%;
+        justify-content: center;
+    }
+    .eatbox__column {
+        margin: 0%;
+    }
+    .eatbox__type {
+        margin: 0%;
+    }
+    .head__item1-2 {
+        display: none;
+    }
+}
+@media (min-width: 320px) {
+    
+}
+/*На 320 пикселях есть белая полоса справа...Так и не смог найти и пофиксить...*/

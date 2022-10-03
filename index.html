@@ -1,63 +1,350 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descryption" content="Блюда на кажды день. Продажа еды. Диетическое питание.">
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/iconsfont.css">
     <link rel="stylesheet" href="src/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Gorod-Sad</title>
+    <!--[if lt IE 8]>
+<p class="chromeframe">Похоже, что ты используешь
+устаревший браузер, друг. Пожалуйста, <a href="http://
+browsehappy.com/">скачай новый браузер абсолютно
+бесплатно</a> или <a href="http://www.google.com/
+chromeframe/?redirect=true">активируй Google Chrome Frame</
+a></p>
+<![endif]-->
 </head>
-<body>
-    <div class="clear"></div>
-    <div class="clear"></div>
-    <div class="clear"></div>
-        <!--Пустые дивы нужны для будующих листов-->
-    <div>
-        <h2>Инстаграм</h2>
-            <hr width="70">
-        <ul class="link">
-            <li class="item">
-              <a href="@gorod-sad.com" style="padding-right: 20px;">@gorod-sad.com</a>
-            </li>
-            <li class="item">
-                <a href="#">#правильное питание</a>
-              </li>
-             <li class="item">
-              <a href="#">#снижениевеса</a>
-            </li>
-             <li class="item">
-              <a href="#">#спортпит</a>
-            </li>
-          </ul>
-    </div>
 
-    <div class="big">
-        
-            <div>
-                <img src="image/Group 310.png"  alt="">
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <ul class="menu__nav">
+                    <li class="menu__contact-1"><a class="menu__link" href=""><img src="image/logo1.png" alt=""></a></li>
+                    <li class="menu__text"><a class="menu__text-link" href="#program">Программы</a></li>
+                    <li class="menu__text"><a class="menu__text-link" href="">Доставка</a></li>
+                    <li class="menu__text"><a class="menu__text-link" href="">На чем основано меню?</a></li>
+                    <li class="menu__text"><a class="menu__text-link" href="">О компании</a></li>
+                    <li>
+                        <div class="menu__contact">
+                            <a class="menu__link"
+                                href="tel:+74995214104"><p class="menu__num">+7(499)521-41-04</p><div class="menu__contactUnderline">Обратный звонок</div></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <section class="head">
+                <div class="head__item1">
+                    <p class="head__item1-1">FITS YOUR <img class="head__item1-img" src="image/diet.png" alt="diet"> MACROS<span class="head__item1-2">*</span></p>
+                    <h1 class="head__item1-3">Ваш здоровый рацион питания на каждый день</h1>
+                </div>
+                <div class="head__item2"></div>
+                <div class="head__item3"><img class="head__item3-img" src="image/head.png" alt="head">
+                    <div class="head__item4"><img src="image/list3.png" alt="list3"></div>
+                    <div class="head__item5"><img class="img-anim" src="image/pomidor2.png" alt="pomidor2"></div>
+                    <div class="head__item6"><img class="head__item6-img" src="image/Untitled.png" alt="bludo">
+                        <div class="head__item7"><img class="head__item7-img" src="image/pomidor1.png" alt=""></div>
+                    </div>
+                    <div class="head__item8"><img src="image/list1.png" alt=""></div>
+                    <div class="head__item9"><img src="image/perec.png" alt=""></div>
+                </div>
+            </section>
+            <div class="buttonHead">
+                <form action="#program"><button class="buttonHead__click"><img src="image/botton0.png"
+                            alt="ellipse">ПОДОБРАТЬ
+                        ПРОГРАММУ</button></form>
             </div>
-            <div>
-                <img src="image/Group 311.png"  alt="">
+            <!--Кнопка сделана через баттон, как и требуется в задании, но по моему это здесь не очень уместно т.к.
+                    формы здесь какой-либо нет. Остальные кнопки сделаны с помощью цсс через тег а-->
+        </header>
+        <main>
+            <div class="bz-content">
+                <ul class="bz-content__column">
+                    <li class="bz-content__item animate__animated animate__fadeInDown animate__repeat-1"><div class="bz-content__circle bz-content__circle--1 bz-content__icon-1"></div>
+                        <p class="bz-content__text">Разнообразное меню</p>
+                    </li>
+                    <li class="bz-content__item animate__animated animate__fadeInDown animate__repeat-1"><div class="bz-content__circle bz-content__circle--2 bz-content__icon-2"></div>
+                        <p class="bz-content__text">Много овощей и фруктов</p>
+                    </li>
+                    <li class="bz-content__item animate__animated animate__fadeInDown animate__repeat-1"><div class="bz-content__circle bz-content__circle--3 bz-content__icon-3"></div>
+                        <p class="bz-content__text">Минимум соли, без сахара</p>
+                    </li>
+                    <li class="bz-content__item animate__animated animate__fadeInDown animate__repeat-1"><div class="bz-content__circle bz-content__circle--4 bz-content__icon-4"></div>
+                        <p class="bz-content__text">Полезные способы приготовления</p>
+                    </li>
+                    <li class="bz-content__item animate__animated animate__fadeInDown animate__repeat-1"><div class="bz-content__circle bz-content__circle--5 bz-content__icon-5"></div>
+                        <p class="bz-content__text">Бесконтактная доставка</p>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <img src="image/Group 312.png"  alt="">
+            <section class="eatbox">
+                <div class="eatbox__perec2"><img src="image/perec2.png" alt="perec"></div>
+                <header class="header">
+                    <h2 class="header__h2" id="program">Программы</h2>
+                    <hr class="header__hr-line">
+                    <p class="header__slogan">уникальные подарки внутри от партнеров</p>
+                </header>
+                <div class="eatbox__type">
+                    <div class="eatbox__column"><img class="eatbox__column-img" src="image/program.png" alt="eatbox">
+                        <div class="eatbox__part">
+                            <h3 class="eatbox__name">Healthy&Tasty</h3>
+                            <p class="eatbox__column-p">4 приема</p>
+                            <div class="eatbox__item">
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/coffee.png" alt="coffee">завтрак</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/breakfast.png" alt="breakfast">перекус</div>
+                                </div>
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/food.png" alt="food">обед</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/cereal.png" alt="cereal">ужин</div>
+                                </div>
+                            </div>
+                            <ul class="eatbox__total">
+                                <li class="eatbox__totalText">Панкейки гречневые постные с соусом</li>
+                                <li class="eatbox__totalText">Крем-суп из шпината</li>
+                                <li class="eatbox__totalText">Тыква запечная с сахаром</li>
+                                <li class="eatbox__totalText">Голубцы овощные</li>
+                            </ul><a class="eatbox__type-button" href="">ЗАКАЗАТЬ ПРОГРАММУ</a>
+                        </div>
+                    </div>
+                    <div class="eatbox__column"><img class="eatbox__column-img" src="image/program.png" alt="program">
+                        <div class="eatbox__part">
+                            <h3 class="eatbox__name">Healthy&Tasty</h3>
+                            <p class="eatbox__column-p">4 приема</p>
+                            <div class="eatbox__item">
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/coffee.png" alt="coffee">завтрак</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/breakfast.png" alt="breakfast">перекус</div>
+                                </div>
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/food.png" alt="food">обед</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/cereal.png" alt="cereal">ужин</div>
+                                </div>
+                            </div>
+                            <ul class="eatbox__total">
+                                <li class="eatbox__totalText">Панкейки гречневые постные с соусом</li>
+                                <li class="eatbox__totalText">Крем-суп из шпината</li>
+                                <li class="eatbox__totalText">Тыква запечная с сахаром</li>
+                                <li class="eatbox__totalText">Голубцы овощные</li>
+                            </ul><a class="eatbox__type-button" href="">ЗАКАЗАТЬ ПРОГРАММУ</a>
+                        </div>
+                    </div>
+                    <div class="eatbox__column"><img class="eatbox__column-img" src="image/program.png" alt="program">
+                        <div class="eatbox__part">
+                            <h3 class="eatbox__name">Healthy&Tasty</h3>
+                            <p class="eatbox__column-p">4 приема</p>
+                            <div class="eatbox__item">
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/coffee.png" alt="coffee">завтрак</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/breakfast.png" alt="breakfast">перекус</div>
+                                </div>
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/food.png" alt="food">обед</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/cereal.png" alt="cereal">ужин</div>
+                                </div>
+                            </div>
+                            <ul class="eatbox__total">
+                                <li class="eatbox__totalText">Панкейки гречневые постные с соусом</li>
+                                <li class="eatbox__totalText">Крем-суп из шпината</li>
+                                <li class="eatbox__totalText">Тыква запечная с сахаром</li>
+                                <li class="eatbox__totalText">Голубцы овощные</li>
+                            </ul><a class="eatbox__type-button" href="">ЗАКАЗАТЬ ПРОГРАММУ</a>
+                        </div>
+                    </div>
+                    <div class="eatbox__column"><img class="eatbox__column-img" src="image/program.png" alt="program">
+                        <div class="eatbox__part">
+                            <h3 class="eatbox__name">Healthy&Tasty</h3>
+                            <p class="eatbox__column-p">4 приема</p>
+                            <div class="eatbox__item">
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/coffee.png" alt="coffee">завтрак</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/breakfast.png" alt="breakfast">перекус</div>
+                                </div>
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/food.png" alt="food">обед</div>
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/cereal.png" alt="cereal">ужин</div>
+                                </div>
+                            </div>
+                            <ul class="eatbox__total">
+                                <li class="eatbox__totalText">Панкейки гречневые постные с соусом</li>
+                                <li class="eatbox__totalText">Крем-суп из шпината</li>
+                                <li class="eatbox__totalText">Тыква запечная с сахаром</li>
+                                <li class="eatbox__totalText">Голубцы овощные</li>
+                            </ul><a class="eatbox__type-button" href="">ЗАКАЗАТЬ ПРОГРАММУ</a>
+                        </div>
+                    </div>
+                    <div class="eatbox__column"><img class="eatbox__column-img" src="image/program.png" alt="program">
+                        <div class="eatbox__part">
+                            <h3 class="eatbox__name">Healthy&Tasty</h3>
+                            <p class="eatbox__column-p">4 приема</p>
+                            <div class="eatbox__item">
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/coffee.png" alt="coffee">завтрак</div>
+                                    <div><img class="eatbox__item-img" src="image/breakfast.png" alt="breakfast">перекус
+                                    </div>
+                                </div>
+                                <div class="eatbox__timeeat">
+                                    <div class="eatbox__timeeat-period"><img class="eatbox__item-img"
+                                            src="image/food.png" alt="food">обед</div>
+                                    <div><img class="eatbox__item-img" src="image/cereal.png" alt="cereal">ужин</div>
+                                </div>
+                            </div>
+                            <ul class="eatbox__total">
+                                <li class="eatbox__totalText">Панкейки гречневые постные с соусом</li>
+                                <li class="eatbox__totalText">Крем-суп из шпината</li>
+                                <li class="eatbox__totalText">Тыква запечная с сахаром</li>
+                                <li class="eatbox__totalText">Голубцы овощные</li>
+                            </ul><a class="eatbox__type-button" href="">ЗАКАЗАТЬ ПРОГРАММУ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eatbox__rectangle"><img src="image/Rectangle.png" alt="Rectangle"></div>
+                <div class="eatbox__food2"><img class="img-anim" src="image/food2.png" alt="food"></div>
+                <div class="eatbox__spice"><img src="image/spice.png" alt="spice"></div>
+                <div class="eatbox__svekla_list"><img src="image/svekla_list.png" alt="svekla_list"></div>
+                <div class="eatbox__svekla_list_small"><img src="image/svekla_list_small.png" alt=""></div>
+                <div class="eatbox__ogurec"><img class="img-anim" src="image/ogurec.png" alt="ogurec"></div>
+            </section>
+        </main>
+        <!--Пустые дивы нужны для будующих листов-->
+        <section class="inst">
+            <header class="header">
+                <div class="header__bazilik_list3">
+                    <img src="image/bazilik_list3.png" alt="bazilik">
+                </div>
+                <div class="header__greenery3"><img src="image/greenery3.png" alt="greenery"></div>
+                <div class="header__bazilik_list2"><img src="image/bazilik_list2.png" alt="bazilik"></div>
+                <div class="header__greenery2"><img src="image/greenery2.png" alt=""></div>
+                <h2 class="header__h2" id="instagram">Инстаграм</h2>
+                <hr class="header__hr-line">
+                <nav>
+                    <ul class="inst__link">
+                        <li class="inst__tag"><a class="inst__tag-link" href="@gorod-sad.com"
+                                style="padding-right: 20px;">@gorod-sad.com</a>
+                        </li>
+                        <li class="inst__tag"><a class="inst__tag-link" href="#">#правильное питание</a></li>
+                        <li class="inst__tag"><a class="inst__tag-link" href="#">#снижениевеса</a></li>
+                        <li class="inst__tag"><a class="inst__tag-link" href="#">#спортпит</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="inst__item">
+                <img class="inst__item-img" src="image/item310.png" alt="item310">
+                <img class="inst__item-img" src="image/item311.png" alt="item311">
+                <img class="inst__item-img" src="image/item313.png" alt="item313">
+                <img class="inst__item-img" src="image/item314.png" alt="item314">
+                <img class="inst__item-img" src="image/item312.png" alt="item312">
+                <img class="inst__item-img" src="image/item315.png" alt="item315">
+                <img class="inst__item-img" src="image/item316.png" alt="item316">
+                <img class="inst__item-img" src="image/item317.png" alt="item317">
             </div>
-            <div>
-                <img src="image/Group 313.png"  alt="">
+        </section>
+
+        <section class="contactus">
+            <div class="contactus__mushrooms"><img class="img-anim" src="image/mushrooms.png" alt="mushrooms"></div>
+            <div class="contactus__greenery3"> <img class="img-anim" src="image/greenery3.png" alt="greenery"></div>
+            <div class="contactus__perec3"><img class="img-anim" src="image/perec3.png" alt=""></div>
+            <div class="contactus__logo"><img class="contactus__logoimg img-anim" src="image/imglogo.png" alt="logo"></div>
+            <h2 class="contactus__head">Связаться с нами</h2>
+            <form class="contactus__client" action="URL">
+                <div class="contactus__clientInfo"><input class="contactus__field" type="text" placeholder="Имя"
+                        maxlength="15" minlength="2" required>
+                    <input class="contactus__field" type="text" placeholder="Фамилия" maxlength="15" minlength="3"
+                        required>
+                </div>
+                <div class="contactus__clientInfo"><input class="contactus__field" type="email" placeholder="E-mail*"
+                        required>
+                    <input class="contactus__field" type="tel" placeholder="Телефон" minlength="6" required>
+                </div>
+                <div class="contactus__clientInfo contactus__clientInfo--reverse">
+                    <div>
+                        <select class="contactus__field" name="timeselect" id="timeselect" required>
+                            <option class="contactus__time" value="">Выбрать время звонка</option>
+                            <option class="contactus__time" value="">10:00</option>
+                            <option class="contactus__time" value="">11:00</option>
+                            <option class="contactus__time" value="">12:00</option>
+                            <option class="contactus__time" value="">13:00</option>
+                            <option class="contactus__time" value="">14:00</option>
+                            <option class="contactus__time" value="">15:00</option>
+                            <option class="contactus__time" value="">16:00</option>
+                            <option class="contactus__time" value="">17:00</option>
+                            <option class="contactus__time" value="">18:00</option>
+                            <option class="contactus__time" value="">19:00</option>
+                            <option class="contactus__time" value="">20:00</option>
+                        </select>
+                        <div class="contactus__subscr"><input id="subscr" class="contactus__radio" type="radio"
+                                name="subscribe" checked>
+                            <label class="contactus__label" for="subscr">Получить рассылку</label>
+                            <input id="nosubscr" class="contactus__radio" type="radio" name="subscribe"> <label
+                                for="nosubscr">
+                                Не получать рассылку</label>
+                        </div>
+                        <div class="contactus__subscr"><input class="contactus__personaldata"
+                                id="contactus__pesonaldata" type="checkbox" required><label
+                                for="contactus__pesonaldata"> Я согласен на обработку персональных
+                                данных</label></div>
+                    </div>
+
+                    <textarea class="contactus__field" name="comment" id="comment" cols="30" rows="6"
+                        placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="contactus__buttonBlock"><input type="submit" class="contactus__button" value="ОТПРАВИТЬ">
+                </div>
+            </form>
+            <div class="contactus__perec4"><img class="img-anim" src="image/perec4.png" alt="perec"></div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="contact">
+                <div class="contact__logo"><a href=""><img src="image/logo.png" alt="logo"></a></div>
+                <address class="address">
+                    <p><b>+7(499)521-41-04</b></p>
+                    <p>г. Москва,
+                        Семеновская наб. 2/1с1,
+                        офис 1003</p><a class="address-link" href="mailto:info@gorodsad.ru">info@gorodsad.ru</a>
+                </address>
+                <nav class="contact__social">
+                    <ul class="contact__social-ul">
+                        <li class="contact__social-li"><a class="contact__social-link" href="https://www.facebook.com/"
+                                target="_blank"><img src="image/facebook.svg" alt="facebook"></a></li>
+                        <li class="contact__social-li"><a class="contact__social-link" href="https://vk.com/"
+                                target="_blank"><img src="image/vk.svg" alt="vk"></a></li>
+                        <li class="contact__social-li"><a class="contact__social-link" href="https://www.instagram.com/"
+                                target="_blank"><img src="image/inst.svg" alt="inst"></a></li>
+                        <li class="contact__social-li"><a class="contact__social-link" href="https://www.youtube.com/"
+                                target="_blank"><img src="image/youtube.svg" alt="youtube"></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <img src="image/Group 314.png"  alt="">
-            </div>
-            <div>
-                <img src="image/Group 315.png"  alt="">
-            </div>
-            <div>
-                <img src="image/Group 316.png"  alt="">
-            </div>
-            <div>
-                <img src="image/Group 317.png"  alt="">
-            </div>
+            <div class="copyright"><small>2020 @ООО "Город-сад"</small><small>Разработка сайта
+                    <b>WEBPROFI</b></small></div>
+        </footer>
     </div>
-    <div class="clear"></div>
 </body>
+
 </html>
